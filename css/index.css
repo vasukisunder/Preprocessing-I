@@ -131,7 +131,9 @@ table {
   box-sizing: border-box;
 }
 body {
-  width: 850px;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
   margin: 0 auto;
   padding: 1%;
 }
@@ -236,4 +238,15 @@ header nav a:hover {
   width: 63%;
   background-color: #FDEDEC;
   padding: 4% 2%;
+}
+@media (max-width: 500px) {
+  body {
+    color: pink;
+  }
+  header h1 {
+    font-size: 20px;
+  }
+  .main {
+    flex-direction: column;
+  }
 }
